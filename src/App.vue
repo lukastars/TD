@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeroSection />
+  <SectionsNav />
+  <SectionOne />
+  <SectionTwo />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeroSection from './components/HeroSection.vue';
+import SectionsNav from './components/SectionsNav.vue';
+import SectionOne from './components/SectionOne.vue';
+import SectionTwo from './components/SectionTwo.vue';
+
+import './assets/main.css';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    HeroSection,
+    SectionsNav,
+    SectionOne,
+    SectionTwo,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  background-color: #f8f8f8;
 }
 </style>
