@@ -1,5 +1,5 @@
 <template>
-  <div class="px-16 pt-16 flex">
+  <div class="px-16 pt-[8rem] flex">
     <div class="flex border-b-2 pb-16">
       <div class="w-[48%] mr-7">
         <img src="../assets/hawaii.jpg" alt="" class="rounded-xl" />
