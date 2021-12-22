@@ -1,35 +1,299 @@
 <template>
-  <div v-if="loading">asddd</div>
-  <div v-if="!loading">
-    <Flickity ref="main" :options="mainImgOtions" class="carousel-main">
-      <div
-        v-for="(image, index) in fullImages"
-        :key="index"
-        class="carousel-cel p-12"
+  <div class="px-16 py-16">
+    <h1 class="text-3xl text-center font-bold font-serif mb-5">Section 3</h1>
+    <div v-if="loading">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        style="margin: auto; background: #fff; display: block"
+        width="200px"
+        height="200px"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid"
       >
-        <img
+        <g transform="rotate(0 50 50)">
+          <rect
+            x="47"
+            y="24"
+            rx="3"
+            ry="6"
+            width="6"
+            height="12"
+            fill="#044d73"
+          >
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.9166666666666666s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(30 50 50)">
+          <rect
+            x="47"
+            y="24"
+            rx="3"
+            ry="6"
+            width="6"
+            height="12"
+            fill="#044d73"
+          >
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.8333333333333334s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(60 50 50)">
+          <rect
+            x="47"
+            y="24"
+            rx="3"
+            ry="6"
+            width="6"
+            height="12"
+            fill="#044d73"
+          >
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.75s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(90 50 50)">
+          <rect
+            x="47"
+            y="24"
+            rx="3"
+            ry="6"
+            width="6"
+            height="12"
+            fill="#044d73"
+          >
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.6666666666666666s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(120 50 50)">
+          <rect
+            x="47"
+            y="24"
+            rx="3"
+            ry="6"
+            width="6"
+            height="12"
+            fill="#044d73"
+          >
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.5833333333333334s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(150 50 50)">
+          <rect
+            x="47"
+            y="24"
+            rx="3"
+            ry="6"
+            width="6"
+            height="12"
+            fill="#044d73"
+          >
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.5s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(180 50 50)">
+          <rect
+            x="47"
+            y="24"
+            rx="3"
+            ry="6"
+            width="6"
+            height="12"
+            fill="#044d73"
+          >
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.4166666666666667s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(210 50 50)">
+          <rect
+            x="47"
+            y="24"
+            rx="3"
+            ry="6"
+            width="6"
+            height="12"
+            fill="#044d73"
+          >
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.3333333333333333s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(240 50 50)">
+          <rect
+            x="47"
+            y="24"
+            rx="3"
+            ry="6"
+            width="6"
+            height="12"
+            fill="#044d73"
+          >
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.25s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(270 50 50)">
+          <rect
+            x="47"
+            y="24"
+            rx="3"
+            ry="6"
+            width="6"
+            height="12"
+            fill="#044d73"
+          >
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.16666666666666666s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(300 50 50)">
+          <rect
+            x="47"
+            y="24"
+            rx="3"
+            ry="6"
+            width="6"
+            height="12"
+            fill="#044d73"
+          >
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.08333333333333333s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(330 50 50)">
+          <rect
+            x="47"
+            y="24"
+            rx="3"
+            ry="6"
+            width="6"
+            height="12"
+            fill="#044d73"
+          >
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="0s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+      </svg>
+    </div>
+    <div>
+      <Flickity
+        v-if="!loading"
+        ref="main"
+        :options="mainImgOtions"
+        class="carousel-main"
+      >
+        <div
+          v-for="(image, index) in fullImages"
           :key="index"
-          :src="image"
-          alt="Left image"
-          class="rounded-2xl w-full carousel-cell-image"
-        />
-      </div>
-    </Flickity>
+          class="carousel-cel p-12"
+        >
+          <img
+            :key="index"
+            :src="image"
+            alt="Left image"
+            class="rounded-2xl w-full carousel-cell-image min-h-[600px]"
+          />
+        </div>
+      </Flickity>
 
-    <Flickity ref="nav" :options="navImgOtions" class="carousel-nav">
-      <div
-        v-for="(thumbnail, index) in thumbnails"
-        :key="index"
-        class="carousel-cel p-3"
+      <Flickity
+        v-if="!loading"
+        ref="nav"
+        :options="navImgOtions"
+        class="carousel-nav"
       >
-        <img
+        <div
+          v-for="(thumbnail, index) in thumbnails"
           :key="index"
-          :src="thumbnail"
-          alt="Left image"
-          class="rounded-2xl"
-        />
-      </div>
-    </Flickity>
+          class="carousel-cel p-3"
+        >
+          <img
+            :key="index"
+            :src="thumbnail"
+            alt="Left image"
+            class="rounded-2xl min-h-[150px]"
+          />
+        </div>
+      </Flickity>
+    </div>
   </div>
 </template>
 
@@ -43,28 +307,20 @@ export default {
   components: { Flickity },
   data() {
     return {
-      loading: true,
+      loading: false,
       allImages: [],
-      fullImages: [
-        'https://via.placeholder.com/600/92c952',
-        'https://via.placeholder.com/600/92c952',
-        'https://via.placeholder.com/600/92c952',
-      ],
-      thumbnails: [
-        'https://via.placeholder.com/150/92c952',
-        'https://via.placeholder.com/150/92c952',
-        'https://via.placeholder.com/150/92c952',
-      ],
+      fullImages: [],
+      thumbnails: [],
 
       imgVisible: 0,
       mainImgOtions: {
-        fade: true,
         imagesLoaded: true,
         initialIndex: 0,
         prevNextButtons: false,
         pageDots: false,
       },
       navImgOtions: {
+        imagesLoaded: true,
         asNavFor: '.carousel-main',
         freeScroll: false,
         contain: true,
@@ -76,10 +332,14 @@ export default {
   methods: {
     async getImages() {
       try {
+        this.loading = true;
         const response = await axios.get(
           'https://jsonplaceholder.typicode.com/photos?albumId=1'
         );
-        this.loading = false;
+        setTimeout(() => {
+          this.loading = false;
+        }, 1000);
+
         return response.data;
       } catch (error) {
         console.log(error);
@@ -96,7 +356,7 @@ export default {
 
   async mounted() {
     this.allImages = await this.getImages();
-    await this.filterImages();
+    this.filterImages();
   },
 };
 </script>
