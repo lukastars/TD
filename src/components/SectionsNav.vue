@@ -53,30 +53,28 @@ export default {
     isActive(name) {
       return this.activeTab === name;
     },
+    trackScroll() {
+      let num = window.innerHeight / 2;
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > num) {
+          document.querySelector('.menu').classList.add('fixed');
+        } else {
+          document.querySelector('.menu').classList.remove('fixed');
+        }
+
+        const sections = document.querySelectorAll('.section');
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (scrollY >= sectionTop) {
+            this.activeTab = section.getAttribute('id');
+          }
+        });
+      });
+    },
   },
   created() {
-    let num = window.innerHeight / 2;
-
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > num) {
-        document.querySelector('.menu').classList.add('fixed');
-      } else {
-        document.querySelector('.menu').classList.remove('fixed');
-      }
-    });
-
-    const sections = document.querySelectorAll('.section');
-
-    window.onscroll = () => {
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        if (scrollY >= sectionTop) {
-          setTimeout(() => {
-            this.activeTab = section.getAttribute('id');
-          }, 100);
-        }
-      });
-    };
+    this.trackScroll();
   },
 };
 </script>
