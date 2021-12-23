@@ -66,7 +66,7 @@ export default {
 
         sections.forEach((section) => {
           const sectionTop = section.offsetTop;
-          if (scrollY >= sectionTop) {
+          if (scrollY >= sectionTop - 60) {
             this.activeTab = section.getAttribute('id');
           }
         });
