@@ -34,7 +34,6 @@
       </Flickity>
     </div>
   </div>
-  <button v-on:click="reload">asd</button>
 </template>
 
 <script>
