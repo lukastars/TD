@@ -1,19 +1,21 @@
 <template>
-  <div class="px-16 pt-[8rem] section" id="section3">
-    <h1 class="text-3xl text-center font-bold font-serif mb-5">Section 3</h1>
+  <div class="px-9 sm:px-16 pt-[8rem] section" id="section3">
+    <h1 class="text-2xl lg:text-3xl text-center font-bold font-serif mb-5">
+      Section 3
+    </h1>
 
     <div>
       <Flickity ref="main" :options="mainImgOtions" class="carousel-main">
         <div
           v-for="(image, index) in fullImages"
           :key="index"
-          class="carousel-cel p-12"
+          class="carousel-cel p-0 sm:p-12"
         >
           <img
             :key="index"
             :src="image"
             alt="Left image"
-            class="rounded-2xl w-full carousel-cell-image min-h-[600px]"
+            class="rounded-2xl w-full carousel-cell-image min-h-[300px] sm:min-h-[600px]"
           />
         </div>
       </Flickity>

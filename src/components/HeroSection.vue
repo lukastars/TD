@@ -1,12 +1,14 @@
 <template>
-  <div class="hero px-16 py-32">
+  <div class="hero h-[30vh] sm:h-[50vh] px-9 sm:px-16 py-16 sm:py-32">
     <div class="">
-      <h1 class="w-[30rem] font-serif text-white text-6xl mb-5">
+      <h1
+        class="w-full sm:w-[20rem] lg:w-[30rem] font-serif text-white text-2xl sm:text-4xl lg:text-6xl mb-5"
+      >
         What it's like to travel to Hawaii right now
       </h1>
 
       <p
-        class="w-fit py-2 border-gray-400 border-t-2 text-white text-2xl font-sans"
+        class="w-fit text-lg sm:text-xl lg:text-2xl py-2 border-gray-400 border-t-2 text-white font-sans"
       >
         Free flights to remote workers
       </p>
@@ -31,7 +33,5 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 25% 94%;
-
-  height: 50vh;
 }
 </style>

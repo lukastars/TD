@@ -1,13 +1,13 @@
 <template>
   <div class="menu w-full z-10">
-    <div class="flex justify-around">
+    <div class="flex justify-around text-sm md:text-md lg:text-lg">
       <a
         href="#section1"
         v-on:click="setActive('section1')"
         :class="[
           isActive('section1')
-            ? 'text-center border-b-4 border-[#044D73] text-[#044D73] py-6 bg-white w-full font-sans font-bold text-lg'
-            : 'text-center text-[#585f65] py-6 bg-white w-full font-sans font-bold text-lg',
+            ? 'text-center border-b-4 border-[#044D73] text-[#044D73]  py-3 md:py-6 bg-white w-full font-sans font-bold '
+            : 'text-center text-[#585f65] py-3 md:py-6 bg-white w-full font-sans font-bold ',
         ]"
       >
         Section 1
@@ -17,8 +17,8 @@
         v-on:click="setActive('section2')"
         :class="[
           isActive('section2')
-            ? 'text-center border-b-4 border-[#044D73] text-[#044D73] py-6 bg-white w-full font-sans font-bold text-lg'
-            : 'text-center text-[#585f65] py-6 bg-white w-full font-sans font-bold text-lg',
+            ? 'text-center border-b-4 border-[#044D73] text-[#044D73] py-3 md:py-6 bg-white w-full font-sans font-bold '
+            : 'text-center text-[#585f65] py-3 md:py-6 bg-white w-full font-sans font-bold ',
         ]"
       >
         Section 2
@@ -28,8 +28,8 @@
         v-on:click="setActive('section3')"
         :class="[
           isActive('section3')
-            ? 'text-center border-b-4 border-[#044D73] text-[#044D73] py-6 bg-white w-full font-sans font-bold text-lg'
-            : 'text-center text-[#585f65] py-6 bg-white w-full font-sans font-bold text-lg',
+            ? 'text-center border-b-4 border-[#044D73] text-[#044D73] py-3 md:py-6 bg-white w-full font-sans font-bold '
+            : 'text-center text-[#585f65] py-3 md:py-6 bg-white w-full font-sans font-bold ',
         ]"
       >
         Section 3
@@ -82,7 +82,6 @@ export default {
 <style>
 .menu {
   position: absolute;
-  top: 50vh;
 }
 .fixed {
   position: fixed;

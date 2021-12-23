@@ -1,6 +1,6 @@
 <template>
-  <div class="px-16 pt-[8rem] section" id="section2">
-    <h1 class="text-3xl font-bold font-serif mb-5">Section 2</h1>
+  <div class="px-9 sm:px-16 pt-[8rem] section" id="section2">
+    <h1 class="text-2xl lg:text-3xl font-bold font-serif mb-5">Section 2</h1>
     <div class="border-b-2 pb-[8rem]">
       <div class="border-l-2 pl-5 pb-3">
         <div
@@ -11,8 +11,8 @@
             class=""
             :class="[
               year1
-                ? 'far fa-dot-circle text-xl absolute left-[3.4rem] text-[#044D73]'
-                : 'fas fa-circle text-[0.5rem] absolute left-[3.78rem] text-gray-400',
+                ? 'far fa-dot-circle text-xl absolute left-[1.65rem] sm:left-[3.4rem] text-[#044D73]'
+                : 'fas fa-circle text-[0.5rem] absolute left-[2.05rem] sm:left-[3.78rem] text-gray-400',
             ]"
           ></i>
           <h1
@@ -57,8 +57,8 @@
             class=""
             :class="[
               year2
-                ? 'far fa-dot-circle text-xl absolute left-[3.4rem] text-[#044D73]'
-                : 'fas fa-circle text-[0.5rem] absolute left-[3.78rem] text-gray-400',
+                ? 'far fa-dot-circle text-xl absolute left-[1.65rem] sm:left-[3.4rem] text-[#044D73]'
+                : 'fas fa-circle text-[0.5rem] absolute left-[2.05rem] sm:left-[3.78rem] text-gray-400',
             ]"
           ></i>
           <h1
@@ -103,8 +103,8 @@
             class=""
             :class="[
               year3
-                ? 'far fa-dot-circle text-xl absolute left-[3.4rem] text-[#044D73]'
-                : 'fas fa-circle text-[0.5rem] absolute left-[3.78rem] text-gray-400',
+                ? 'far fa-dot-circle text-xl absolute left-[1.65rem] sm:left-[3.4rem] text-[#044D73]'
+                : 'fas fa-circle text-[0.5rem] absolute left-[2.05rem] sm:left-[3.78rem] text-gray-400',
             ]"
           ></i>
           <h1
@@ -150,8 +150,8 @@
             class=""
             :class="[
               year4
-                ? 'far fa-dot-circle text-xl absolute left-[3.4rem] text-[#044D73]'
-                : 'fas fa-circle text-[0.5rem] absolute left-[3.78rem] text-gray-400',
+                ? 'far fa-dot-circle text-xl absolute left-[1.65rem] sm:left-[3.4rem] text-[#044D73]'
+                : 'fas fa-circle text-[0.5rem] absolute left-[2.05rem] sm:left-[3.78rem] text-gray-400',
             ]"
           ></i>
           <h1
@@ -197,8 +197,8 @@
             class=""
             :class="[
               year5
-                ? 'far fa-dot-circle text-xl absolute left-[3.4rem] text-[#044D73]'
-                : 'fas fa-circle text-[0.5rem] absolute left-[3.78rem] text-gray-400',
+                ? 'far fa-dot-circle text-xl absolute left-[1.65rem] sm:left-[3.4rem] text-[#044D73]'
+                : 'fas fa-circle text-[0.5rem] absolute left-[2.05rem] sm:left-[3.78rem] text-gray-400',
             ]"
           ></i>
           <h1
