@@ -1,5 +1,5 @@
 <template>
-  <div class="px-9 sm:px-16 pt-[8rem] section" id="section3">
+  <div class="px-9 sm:px-16 pt-[8rem] pb-16 section" id="section3">
     <h1 class="text-2xl lg:text-3xl text-center font-bold font-serif mb-5">
       Section 3
     </h1>
@@ -54,6 +54,7 @@ export default {
       thumbnails: [''],
 
       mainImgOtions: {
+        fade: true,
         imagesLoaded: true,
         contain: true,
 
