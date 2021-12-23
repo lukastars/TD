@@ -49,7 +49,6 @@ export default {
   methods: {
     setActive(name) {
       this.activeTab = name;
-      console.log(this.activeTab);
     },
     isActive(name) {
       return this.activeTab === name;
