@@ -1,5 +1,5 @@
 <template>
-  <div class="px-16 py-16">
+  <div class="px-16 pt-[8rem] section" id="section3">
     <h1 class="text-3xl text-center font-bold font-serif mb-5">Section 3</h1>
     <div v-if="loading">
       <svg
@@ -312,10 +312,10 @@ export default {
       fullImages: [],
       thumbnails: [],
 
-      imgVisible: 0,
+      imgVisible: 1,
       mainImgOtions: {
         imagesLoaded: true,
-        initialIndex: 0,
+        initialIndex: 1,
         prevNextButtons: false,
         pageDots: false,
       },

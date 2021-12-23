@@ -1,7 +1,7 @@
 <template>
-  <div class="px-16 py-16">
+  <div class="px-16 pt-[8rem] section" id="section2">
     <h1 class="text-3xl font-bold font-serif mb-5">Section 2</h1>
-    <div class="border-b-2 pb-16">
+    <div class="border-b-2 pb-[8rem]">
       <div class="border-l-2 pl-5 pb-3">
         <div
           class="flex items-center pb-6 cursor-pointer"

@@ -1,36 +1,39 @@
 <template>
   <div class="menu w-full z-10">
     <div class="flex justify-around">
-      <button
+      <a
+        href="#section1"
         v-on:click="setActive('section1')"
         :class="[
           isActive('section1')
-            ? 'border-b-4 border-[#044D73] text-[#044D73] py-6 bg-white w-full font-sans font-bold text-lg'
-            : 'text-[#585f65] py-6 bg-white w-full font-sans font-bold text-lg',
+            ? 'text-center border-b-4 border-[#044D73] text-[#044D73] py-6 bg-white w-full font-sans font-bold text-lg'
+            : 'text-center text-[#585f65] py-6 bg-white w-full font-sans font-bold text-lg',
         ]"
       >
         Section 1
-      </button>
-      <button
+      </a>
+      <a
+        href="#section2"
         v-on:click="setActive('section2')"
         :class="[
           isActive('section2')
-            ? 'border-b-4 border-[#044D73] text-[#044D73] py-6 bg-white w-full font-sans font-bold text-lg'
-            : 'text-[#585f65] py-6 bg-white w-full font-sans font-bold text-lg',
+            ? 'text-center border-b-4 border-[#044D73] text-[#044D73] py-6 bg-white w-full font-sans font-bold text-lg'
+            : 'text-center text-[#585f65] py-6 bg-white w-full font-sans font-bold text-lg',
         ]"
       >
         Section 2
-      </button>
-      <button
+      </a>
+      <a
+        href="#section3"
         v-on:click="setActive('section3')"
         :class="[
           isActive('section3')
-            ? 'border-b-4 border-[#044D73] text-[#044D73] py-6 bg-white w-full font-sans font-bold text-lg'
-            : 'text-[#585f65] py-6 bg-white w-full font-sans font-bold text-lg',
+            ? 'text-center border-b-4 border-[#044D73] text-[#044D73] py-6 bg-white w-full font-sans font-bold text-lg'
+            : 'text-center text-[#585f65] py-6 bg-white w-full font-sans font-bold text-lg',
         ]"
       >
         Section 3
-      </button>
+      </a>
     </div>
   </div>
 </template>
@@ -51,21 +54,32 @@ export default {
     isActive(name) {
       return this.activeTab === name;
     },
-    test() {
-      console.log('sssss');
-    },
+  },
+  created() {
+    let num = window.innerHeight / 2;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > num) {
+        document.querySelector('.menu').classList.add('fixed');
+      } else {
+        document.querySelector('.menu').classList.remove('fixed');
+      }
+    });
+
+    const sections = document.querySelectorAll('.section');
+
+    window.onscroll = () => {
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (scrollY >= sectionTop) {
+          setTimeout(() => {
+            this.activeTab = section.getAttribute('id');
+          }, 100);
+        }
+      });
+    };
   },
 };
-
-let num = window.innerHeight / 2;
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > num) {
-    document.querySelector('.menu').classList.add('fixed');
-  } else {
-    document.querySelector('.menu').classList.remove('fixed');
-  }
-});
 </script>
 
 <style>

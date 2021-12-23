@@ -1,6 +1,6 @@
 <template>
-  <div class="px-16 pt-[8rem] flex">
-    <div class="flex border-b-2 pb-16">
+  <div class="px-16 pt-[8rem] flex section" id="section1">
+    <div class="flex border-b-2 pb-[8rem]">
       <div class="w-[48%] mr-7">
         <img src="../assets/hawaii.jpg" alt="" class="rounded-xl" />
       </div>

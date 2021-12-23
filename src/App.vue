@@ -4,6 +4,7 @@
   <SectionOne />
   <SectionTwo />
   <SectionThree />
+  <FooterMain />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import SectionsNav from './components/SectionsNav.vue';
 import SectionOne from './components/SectionOne.vue';
 import SectionTwo from './components/SectionTwo.vue';
 import SectionThree from './components/SectionThree.vue';
+import FooterMain from './components/FooterMain.vue';
 
 import './assets/main.css';
 
@@ -23,6 +25,7 @@ export default {
     SectionOne,
     SectionTwo,
     SectionThree,
+    FooterMain,
   },
 };
 </script>
